@@ -1,0 +1,46 @@
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Label on top-left corner */
+.label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  color: white;
+  padding: 8px 16px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Optional: Responsive typography */
+@media (max-width: 768px) {
+  .label {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .label {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+}

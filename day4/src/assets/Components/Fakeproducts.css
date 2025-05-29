@@ -1,0 +1,134 @@
+.products{
+    height: 60vh;
+    width: 20vw;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(23, 22, 22);
+    margin: 1rem ;
+
+
+}
+.products >img{
+    height: 80%;
+    width: 80%;
+} 
+.products-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+
+.products h2 {
+  margin: 0;
+  border: none;
+  text-align: center;
+}
+.products h4 {
+ border: none;
+  text-align: center;
+}
+
+
+@media (max-width:426px) {
+    .products{
+    height: 60vh;
+    width: 80vw;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(23, 22, 22);
+     margin: 0 auto;
+
+}
+.products >img{
+    height: 80%;
+    width: 80%;
+} 
+
+
+
+    .products-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.product-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+   margin-top: 1rem;
+   
+}
+.products h2 {
+  margin: 0;
+  border: none;
+  text-align: center;
+}
+.products h4 {
+ border: none;
+  text-align: center;
+}
+
+}
+/* ///////////// tablet */
+@media (min-width:426px) and (max-width:768px) {
+     .products{
+    height: 60vh;
+    width: 30vw;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(23, 22, 22);
+   margin: 0 auto;
+
+}
+.products >img{
+    height: 80%;
+    width: 80%;
+} 
+
+    .products-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+}
+.products h2 {
+  margin: 0;
+  border: none;
+  text-align: center;
+}
+.products h4 {
+ border: none;
+  text-align: center;
+}
+
+
+}

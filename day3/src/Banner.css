@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  
+}
+
+.hero-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Overlay content centered */
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: rgba(0, 0, 0, 0.3); /* Optional background for contrast */
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+
+/* "BR" box */
+.logo-box {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 10px 20px;
+}
+
+/* "Architects" text */
+.hero-text {
+  color: white;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}

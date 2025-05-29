@@ -1,0 +1,19 @@
+.map{
+  height: 40vh;
+}
+.map > img{
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .map > img{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+   .map > img{
+    width: 100%;
+    height: auto;
+  }
+}
