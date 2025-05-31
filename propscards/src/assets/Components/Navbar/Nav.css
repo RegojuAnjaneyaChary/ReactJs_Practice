@@ -1,0 +1,99 @@
+
+/* Base styles (Mobile-first) */
+.nav {
+  background-color: #f8f8f8;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav h1 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.nav-links a span {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.nav-links a span:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.icon-container {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.icon {
+  font-size: 20px;
+  color: #4f8cff;
+  cursor: pointer;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  color: #2563eb;
+}
+
+/* Tablet styles (min-width: 600px) */
+@media screen and (min-width: 600px) {
+  .nav {
+    padding: 1rem 2rem;
+  }
+
+  .nav h1 {
+    font-size: 1.5rem;
+  }
+
+  .nav-links a span {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .icon {
+    font-size: 24px;
+  }
+}
+
+/* Laptop styles (min-width: 1024px) */
+@media screen and (min-width: 1024px) {
+  .nav {
+    flex-wrap: nowrap;
+  }
+
+  .nav-links {
+    gap: 1.5rem;
+    margin-top: 0;
+  }
+
+  .icon-container {
+    gap: 16px;
+  }
+
+  .icon {
+    font-size: 28px;
+  }
+}
