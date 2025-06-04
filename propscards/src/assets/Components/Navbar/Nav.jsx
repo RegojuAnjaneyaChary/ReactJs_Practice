@@ -13,7 +13,7 @@ function Nav() {
       <div className="nav-links">
         <Link to="/products"><span className='product'>Products</span></Link>
         <Link to="/recipies"><span className='recipies'>Recipies</span></Link>
-        {/* <Link to="/users"><span className='users'>  Users</span></Link>   */}
+      
         <div className="icon-container">
           <Link to="/cartitems" className="icon-link">
           
