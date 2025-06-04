@@ -11,7 +11,7 @@ function Recipiescards({ SingleRecipie }) {
             <div className='recipies-card-details'>
                 <h2>{SingleRecipie.name}</h2>
                 <h4>Cuisine: {SingleRecipie.cuisine}</h4>
-                <h4>Ingredients: {SingleRecipie.ingredients.join(', ')}</h4>
+                {/* <h4>Ingredients: {SingleRecipie.ingredients.join(', ')}</h4> */}
                 <button
                     onClick={() => navigate(`/recipies/${SingleRecipie.id}`)}
                     className="btn"

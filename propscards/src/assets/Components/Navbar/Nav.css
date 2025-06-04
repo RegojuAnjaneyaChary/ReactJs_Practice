@@ -1,99 +1,148 @@
-
-/* Base styles (Mobile-first) */
-.nav {
-  background-color: #f8f8f8;
-  padding: 1rem 1.5rem;
+.nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  padding: 8px 40px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
 }
-
-.nav h1 {
-  margin: 0;
-  font-size: 1.2rem;
-}
-
 .nav-links {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 0.5rem;
+  gap: 20px;
+  align-items: center;
 }
 
-.nav-links a span {
-  display: inline-block;
-  padding: 0.4rem 0.8rem;
-  background-color: #007bff;
-  color: white;
+
+.nav-links a .product {
+  background-color: #007bff; /* Blue for Products */
+  color: #fff;
+  padding: 6px 18px;
   border-radius: 5px;
-  text-decoration: none;
-  transition: background-color 0.3s, transform 0.2s;
-  font-weight: 500;
-  cursor: pointer;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  display: inline-block;
+  transition: background 0.2s, transform 0.2s;
 }
 
+.nav-links a .recipies {
+  background-color: #007bff; /* Green for Recipies */
+  color: #fff;
+  padding: 6px 18px;
+  border-radius: 5px;
+  font-size: 1rem;
+  display: inline-block;
+  transition: background 0.2s, transform 0.2s;
+}
+.nav-links a .users {
+  background-color:  #007bff; /* Red for Users */
+  color: #fff;
+  padding: 6px 18px;
+  border-radius: 5px;
+  font-size: 1rem;
+  display: inline-block;
+  transition: background 0.2s, transform 0.2s;
+}
+
+/* Hover effect for all */
 .nav-links a span:hover {
-  background-color: #0056b3;
+  filter: brightness(0.9);
   transform: scale(1.05);
 }
 
+/* Icon container styles */
 .icon-container {
   display: flex;
-  gap: 12px;
+  gap: 18px;
+  align-items: center;
+  margin-left: 1.5rem;
+}
+
+.icon-link {
+  position: relative;
+  display: inline-block;
+}
+
+.icon-link .icon {
+  font-size: 1.7rem;
+  vertical-align: middle;
+  transition: color 0.2s, transform 0.2s;
+}
+
+/* Cart icon color */
+.icon-link:first-child .icon {
+  color: #ff9800;
+}
+
+/* Favorite icon color */
+.icon-link:last-child .icon {
+  color: #e91e63;
+}
+
+/* Cart count badge */
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background-color: #ff9800;
+  color: #fff;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 0.85rem;
+  min-width: 20px;
+  min-height: 20px;
+  padding: 2px 6px;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  margin-top: 10px;
+  z-index: 2;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.10);
 }
 
-.icon {
-  font-size: 20px;
-  color: #4f8cff;
-  cursor: pointer;
-  transition: transform 0.2s, color 0.2s;
+/* Favorite count badge */
+.favorite-count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background-color: #e91e63;
+  color: #fff;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 0.85rem;
+  min-width: 20px;
+  min-height: 20px;
+  padding: 2px 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.10);
 }
 
-.icon:hover {
-  transform: scale(1.2);
-  color: #2563eb;
-}
-
-/* Tablet styles (min-width: 600px) */
-@media screen and (min-width: 600px) {
-  .nav {
-    padding: 1rem 2rem;
-  }
-
-  .nav h1 {
-    font-size: 1.5rem;
-  }
-
-  .nav-links a span {
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
-  }
-
-  .icon {
-    font-size: 24px;
-  }
-}
-
-/* Laptop styles (min-width: 1024px) */
-@media screen and (min-width: 1024px) {
-  .nav {
-    flex-wrap: nowrap;
-  }
-
-  .nav-links {
-    gap: 1.5rem;
-    margin-top: 0;
-  }
-
+/* Responsive styles */
+@media (max-width: 900px) {
   .icon-container {
-    gap: 16px;
+    margin-left: 0.5rem;
+    gap: 12px;
   }
+}
 
-  .icon {
-    font-size: 28px;
+@media (max-width: 600px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-top: 0.3rem;
+    align-items: flex-start;
+  }
+  .icon-container {
+    margin-left: 0;
+    gap: 10px;
+  }
+  .cart-count, .favorite-count {
+    top: -6px;
+    right: -7px;
+    font-size: 0.75rem;
+    min-width: 16px;
+    min-height: 16px;
+    padding: 1px 4px;
   }
 }

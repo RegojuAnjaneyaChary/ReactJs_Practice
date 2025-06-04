@@ -47,6 +47,37 @@
   font-size: 1rem;
 }
 
+.product-details-actions {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.product-details-actions button {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 0.9rem;
+  border: none;
+}
+.product-details-actions button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.icon1 {
+  font-size: 1.5rem;
+  color: white;
+  vertical-align: middle;
+}
+
 /* Tablet */
 @media (max-width: 900px) {
   .product-details-content {
@@ -78,5 +109,9 @@
   .product-details-info p,
   .product-details-info ol {
     font-size: 0.98rem;
+  }
+  .product-details-actions {
+    flex-direction: column;
+    gap: 10px;
   }
 }
