@@ -8,7 +8,6 @@ import Productdetails from "./assets/Components/Products/Productdetails.jsx";
 import Notfound from "./assets/Components/Products/Notfound.jsx";
 import Recipidetails from './assets/Components/Recipies/Recipidetails.jsx';
 
-
 function App() {
   return (
     <div className="App">
@@ -17,12 +16,10 @@ function App() {
         <Route path='/products' element={<Products />} />
         <Route path='/products/:id' element={<Productdetails />} />
         <Route path='/recipies' element={<Recipies />} />
-       
-        <Route path='/cartitems' element={<Cartitems/>} />
+        <Route path="/cartitems" element={<Cartitems />} />
         <Route path='/favoriteitems' element={<Favoriteitems/>} />
         <Route path='*' element={<Notfound/>} />
         <Route path="/recipies/:id" element={<Recipidetails />} />
-    
       </Routes> 
     </div> 
   );
