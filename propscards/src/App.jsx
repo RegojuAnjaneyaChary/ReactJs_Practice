@@ -7,7 +7,7 @@ import Favoriteitems from "./assets/Components/Navbar/Favoriteitems.jsx";
 import Productdetails from "./assets/Components/Products/Productdetails.jsx"
 
 import Recipidetails from './assets/Components/Recipies/Recipidetails.jsx';
-
+import NotFound from "./assets/Components/Products/Notfound.jsx";
 function App() {
   return (
     <div className="App">
@@ -20,6 +20,7 @@ function App() {
         <Route path='/favoriteitems' element={<Favoriteitems/>} />
       
         <Route path="/recipies/:id" element={<Recipidetails />} />
+        <Route path="*" element={<NotFound />} />
       </Routes> 
     </div> 
   );
