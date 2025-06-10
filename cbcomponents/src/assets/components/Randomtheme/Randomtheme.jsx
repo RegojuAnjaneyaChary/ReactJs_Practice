@@ -24,7 +24,7 @@ class Randomtheme extends React.Component {
                 }}
             >
                 <button className="theme-toggle-btn" onClick={this.handlerchangetheme}>
-                    Change Theme
+                   {this.state.istheme ? "Light Mode" : "Dark Mode"}
                 </button>
             </div>
         );
