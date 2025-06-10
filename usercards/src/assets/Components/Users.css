@@ -1,0 +1,23 @@
+.userimage{
+ height: 50vh;
+ width: 50vw;
+ border: 1px solid black;
+ background-color: antiquewhite;
+
+} 
+
+.userimage>img{
+    width: 100px;
+    height: 70px;
+}
+.users-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.users-container>div{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
