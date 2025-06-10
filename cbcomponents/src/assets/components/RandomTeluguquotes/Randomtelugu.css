@@ -1,0 +1,66 @@
+.randomtelugu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    padding: 32px 16px;
+    background: #f9f9f9;
+}
+
+.randomtelugu-container h1 {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 24px;
+    text-align: center;
+    line-height: 1.5;
+    word-break: break-word;
+}
+
+.randomtelugu-container button {
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 12px;
+}
+
+.randomtelugu-container button:hover {
+    background: #0097a7;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .randomtelugu-container {
+        padding: 24px 8px;
+    }
+    .randomtelugu-container h1 {
+        font-size: 1.3rem;
+    }
+    .randomtelugu-container button {
+        font-size: 0.95rem;
+        padding: 10px 20px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .randomtelugu-container {
+        padding: 12px 2px;
+        min-height: 40vh;
+    }
+    .randomtelugu-container h1 {
+        font-size: 1rem;
+        margin-bottom: 16px;
+    }
+    .randomtelugu-container button {
+        width: 80%;
+        font-size: 0.9rem;
+        padding: 10px 0;
+    }
+}
