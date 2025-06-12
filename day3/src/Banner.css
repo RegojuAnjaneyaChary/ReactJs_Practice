@@ -1,41 +1,54 @@
+
 *{
-  margin: 0;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+#home {
+  width: 100%;
+  height: 100vh;
+  /* height: 100vh; */
+  background-image: url("https://www.w3schools.com/w3images/architect.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width:600px) {
+  #home {
+    width: 100%;
+    height: 100vh; 
+    background-image: url("https://www.w3schools.com/w3images/architect.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   
 }
 
-.hero-container img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
 
-/* Overlay content centered */
-.hero-overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  background: rgba(0, 0, 0, 0.3); /* Optional background for contrast */
-  padding: 10px 20px;
-  border-radius: 5px;
-}
+@media (max-width:900px) {
+  #home{
+    width: 100%;
+    height: 100vh; 
+    background-image: url("https://www.w3schools.com/w3images/architect.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-
-/* "BR" box */
-.logo-box {
-  background-color: black;
-  color: white;
-  font-weight: bold;
-  font-size: 2rem;
-  padding: 10px 20px;
 }
-
-/* "Architects" text */
-.hero-text {
-  color: white;
-  font-size: 2rem;
-  letter-spacing: 2px;
-}
+  
+ @media (min-width:900px){
+   #home {
+    margin: -10rem 0;
+   }
+ } 

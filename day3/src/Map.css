@@ -1,8 +1,8 @@
-.map{
-  height: 40vh;
-}
+
 .map > img{
   width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 @media (max-width: 768px) {
   .map > img{
