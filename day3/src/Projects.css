@@ -1,46 +1,77 @@
+/* Container for all project cards */
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
   padding: 20px;
+  margin-top: 5px;
+  background-color: #f9f9f9;
 }
 
+/* Individual card styling */
 .card {
   position: relative;
   overflow: hidden;
-  border-radius: 5px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Hover effect for better UX */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Card image */
 .card img {
   width: 100%;
   height: auto;
   display: block;
+  object-fit: cover;
 }
 
-/* Label on top-left corner */
+/* Top-left label */
 .label {
   position: absolute;
-  top: 0;
-  left: 0;
-  background-color: black;
-  color: white;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
   padding: 8px 16px;
   font-weight: bold;
   font-size: 1rem;
+  border-radius: 4px;
 }
 
-/* Optional: Responsive typography */
+/* Tablet view */
 @media (max-width: 768px) {
   .label {
     font-size: 0.9rem;
     padding: 6px 12px;
   }
+
+  .projects {
+    gap: 16px;
+    padding: 16px;
+  }
 }
 
+/* Mobile view */
 @media (max-width: 480px) {
   .label {
     font-size: 0.8rem;
     padding: 5px 10px;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .card {
+    border-radius: 6px;
   }
 }

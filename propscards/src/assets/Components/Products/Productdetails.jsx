@@ -1,4 +1,3 @@
-npm
 
 import { data } from './Productsdata.jsx'; 
 import { useParams } from 'react-router-dom';
